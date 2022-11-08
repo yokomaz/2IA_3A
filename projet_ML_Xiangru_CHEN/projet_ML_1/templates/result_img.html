@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Image Classification</title>
+  </head>
+  <body>
+  <form class="form-signin" method="post" enctype="multipart/form-data">
+      <p>
+          <img src="static/pytorch.png" width="200" height="200">
+          <h1 class="h3 mb-3 font-weight-normal">Result of first model(microsoft/cvt-13):</h1>
+          <h5 class="h5 mb-3 font-weight-normal">Image Class: {{ class1 }}</h5>
+
+          <h1 class="h3 mb-3 font-weight-normal">Result of second model(google/vit-base-patch16-224):</h1>
+          <h5 class="h5 mb-3 font-weight-normal">Image Class: {{ class2 }}</h5>
+          <p>Built using Pytorch, Flask and Love</p>
+      </p>
+  <button type="submit" name="return">Return</button>
+  </form>
+  </body>
+</html>

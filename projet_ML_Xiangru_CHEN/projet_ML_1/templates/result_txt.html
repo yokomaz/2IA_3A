@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Classification</title>
+</head>
+<body>
+    <form class="form-signin" method="post" enctype="multipart/form-data">
+        <h1 class="h3 mb-3 font-weight-normal">Result of first model(twitter-roberta-base-sentiment):</h1>
+        <h5 class="h5 mb-3 font-weight-normal">Negative: {{Negative1}}</h5>
+        <h5 class="h5 mb-3 font-weight-normal">Neutral: {{Neutral1}}</h5>
+        <h5 class="h5 mb-3 font-weight-normal">Positive: {{Positive1}}</h5>
+
+        <h1 class="h3 mb-3 font-weight-normal">Result of second model(finbert):</h1>
+        <h5 class="h5 mb-3 font-weight-normal">Negative: {{Negative2}}</h5>
+        <h5 class="h5 mb-3 font-weight-normal">Neutral: {{Neutral2}}</h5>
+        <h5 class="h5 mb-3 font-weight-normal">Positive: {{Positive2}}</h5>
+        <p>Built using Pytorch, Flask and Love</p>
+        <button type="submit" name="return">Return</button>
+    </form>
+
+</body>
+</html>
